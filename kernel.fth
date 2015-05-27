@@ -129,7 +129,7 @@ include dictionary.fth
 : search-wordlist ( ca u wl -- 0 | xt 1 | xt -1 )
    (find) ?dup 0= if 2drop 0 then ;
 
-: (sliteral)   r> dup @ swap cell+ 2dup + aligned >r swap ;
+\ : (sliteral)   r> dup @ swap cell+ 2dup + aligned >r swap ;
 
 defer abort
 : undef ( a u -- )   ." Undefined: " type cr abort ;

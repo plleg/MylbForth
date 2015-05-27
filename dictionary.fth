@@ -33,7 +33,7 @@ variable current
 : reveal               latestxt  current @ >body ! ;
 : #name ( -- u )       NAME_LENGTH 1 - ;
 : name, ( a u -- )     #name min c,  #name ", ;
-: header, ( a u -- )   align here >r name, r> link, 0 , ;
+: header, ( a u -- )   align here >r name, 48 allot r> link, 0 , ;
 
 : cells   [ cell 1 > ] [if] dup + [then]
    [ cell 2 > ] [if] dup + [then]

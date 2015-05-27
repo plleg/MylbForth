@@ -2,6 +2,7 @@
 forth
 forth.exe
 kernel.c
+kernel.js
 /params*
 jump.fth
 threading.fth
